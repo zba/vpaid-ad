@@ -385,7 +385,7 @@ defined
    * @param {number} volume  between 0 and 1
    */
   setAdVolume (volume) {
-    if (this.previousAttributes.volume === volume) {
+    if (this.getAdVolume() === volume) {
       // no change, no fire
       return
     }
